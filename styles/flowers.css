@@ -1,5 +1,11 @@
 /* shared css styles */
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
     margin: 0 auto;
     max-width: 1140px;
 }
@@ -30,6 +36,9 @@ body{
     font-weight: bold;
     font-size: 22px;
   }
+  .padding{
+    padding: 0 20px;
+  }
   /* colours shared style css */
   .grey{
     color: #8987A1;
@@ -45,6 +54,10 @@ body{
   header{
     margin-top: 25px;
   }
+  .navbar{
+    display: flex;
+    gap: 20px;
+  }
 .navbar ul{
     display: flex;
     gap: 48px;
@@ -57,11 +70,14 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.dot{
+    list-style: none;
 }
 /* banner section setup styles */
 .banner-section{
     display: flex;
-    justify-content: center;
     margin-top: 120px;
 }
 .banner-items p{
@@ -75,6 +91,12 @@ nav{
 }
 .banner-items{
     max-width: 570px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+.banner-img img{
+    width: 100%;
+
 }
 /* card section styles */
 .our-flowers{
@@ -104,7 +126,39 @@ nav{
 }
 .card h4{
     font-size: 22px;
-    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.price{
+    margin-bottom: 30px;
+}
+.our-flowers{
+    margin-bottom: 50px;
+}
+/* flower and plants section */
+.flower-store{
+    display: flex;
+    gap: 60px;
+    
+}
+.store-description ul li{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+.store-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.plants-image{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: - 30px;
+    height: 286px;
+    width: 286px;
 }
 
 
@@ -122,18 +176,22 @@ nav{
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-        max-width: 100%;
+        
     }
     .banner-items h1{
         font-size: 24px;
     }
     .banner-items{
-        width: 100vw; /* viewport width */
-        /* margin-left: calc(-50vw + 50%); */
-        text-align: center;
         padding: 0 15px;
         max-width: 361px;
     }
+    .card{
+        max-width: 171px;
+    }
+    .flower-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     
     
 }
