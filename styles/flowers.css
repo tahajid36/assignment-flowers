@@ -329,6 +329,11 @@ nav{
 .brand-logos{
     display: flex;
     gap: 24px;
+    align-items: center;
+}
+.xlogo{
+    width: 24px;
+    height: 24px;
 }
 .foot{
     display: flex;
